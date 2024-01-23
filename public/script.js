@@ -12,7 +12,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
         alert('Please fill in all fields');
         return;
     }
-
+    document.getElementById('myForm').reset();
     fetch('http://localhost:8000/submit-form', {
         method: 'POST',
         headers: {
