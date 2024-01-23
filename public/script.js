@@ -13,7 +13,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
         return;
     }
 
-    fetch('/submit-form', {
+    fetch('http://localhost:8000/submit-form', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
